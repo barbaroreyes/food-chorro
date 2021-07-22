@@ -1,3 +1,12 @@
+type Especiales @model @auth(rules: [{allow: public, operations: [read]}]) {
+  id: ID!
+  Dia: String
+  name: String
+  Description: String
+  price: Float
+  image: AWSURL
+}
+
 type Order @model @auth(rules: [{allow: public}]) {
   id: ID!
   date: AWSDate
@@ -22,3 +31,4 @@ type OfertaOrder @model(queries: null) @key(name: "byOferta", fields: ["ofertaID
   oferta: Oferta! @connection(fields: ["ofertaID"])
   order: Order! @connection(fields: ["orderID"])
 }
+ 
