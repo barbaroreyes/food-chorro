@@ -5,9 +5,8 @@ const Nav = () => {
     <nav className='navigation'>
       <Link to='/'>Home</Link>
       <Link to='/ofertas'>Ofertas</Link>
-      <Link to='/'>Home</Link>
-      <Link to='/'>Home</Link>
-      <Link to='/'>Home</Link>
+      <Link to='/especiales'>Especiales</Link>
+      <Link to='/bevidas'>Bevidas</Link>
     </nav>
   )
 }

@@ -7,6 +7,7 @@ import Header from './components/Header'
 import  Aunthentication from './components/Authentication'
 import Home from './pages/Home'
 import Platos from './pages/Ofertas'
+import Especiales from './pages/Speciales'
 import {Switch,Route} from 'react-router-dom'
 import './App.css';
 
@@ -22,10 +23,12 @@ function App() {
      
      <Route exact path="/">
      <Aunthentication/>
-    
-     </Route>
+    </Route>
      <Route exact path="/ofertas">
        <Platos ofertas/>
+     </Route>
+     <Route exact path="/especiales">
+       <Especiales/>
      </Route>
      </Switch>
     </div>

@@ -3,7 +3,7 @@
   background-image: url('https://foodaplication4d68e0d5d42b4ddbb80c6b542241e9f313746-staging.s3.amazonaws.com/public/Elchinchorro.png');
 }
 .ofertas{
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -49,16 +49,18 @@
  .navigation{
   display: flex;
   justify-content:center;
-  padding:30px;
+  padding:8px;
+  /* border: 4px solid rgb(234, 162, 29);; */
  }
  .navigation a{
-   color: rgb(234, 162, 29);
+   color: rgb(200, 202, 43);
    text-decoration: none;
    display: flex;
    justify-content:space-around;
-   /* border: 1px solid white; */
-   margin: 3px;
-   padding: 5px;
+   font-size: 14px;
+   margin:6px;
+   padding:2px;
+   font-weight: bold;
  }
  .name{
   margin: 0;
