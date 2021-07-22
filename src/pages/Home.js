@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Logo from '../components/Logo'
 const Home = () => {
   return (
-    <div>
+    <main className='bg-black'>
       Home
-    </div>
+    </main>
   )
 }
 
