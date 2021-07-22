@@ -4,6 +4,7 @@ import confi from './aws-exports'
 import { DataStore } from '@aws-amplify/datastore';
 import {withAuthenticator,AmplifySignOut} from '@aws-amplify/ui-react'
 import { Oferta } from './models';
+import {Switch,Route} from 'react-router-dom'
 import './App.css';
 
 Amplify.configure(confi)
@@ -15,8 +16,10 @@ function App() {
    setPlates(response)
  },[])
   return (
+    
     <div className="App">
-     <AmplifySignOut/>
+      <Switch>
+     {/* <AmplifySignOut/> */}
      {plates.map((plate,i)=>{
        return (
          <div key={i}>
@@ -24,11 +27,13 @@ function App() {
            <img src={plate.image} alt={plate.name}/>
            <p>{plate.description}</p>
             <span>{plate.price}</span>
+            
          </div>
        )
      })}
+     </Switch>
     </div>
   );
 }
 
-export default withAuthenticator(App);
+export default App;
