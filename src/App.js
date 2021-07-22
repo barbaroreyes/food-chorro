@@ -4,6 +4,7 @@ import confi from './aws-exports'
 import { DataStore } from '@aws-amplify/datastore';
 import {withAuthenticator,AmplifySignOut} from '@aws-amplify/ui-react'
 import Header from './components/Header'
+import  Aunthentication from './components/Authentication'
 import Home from './pages/Home'
 import Platos from './pages/Ofertas'
 import {Switch,Route} from 'react-router-dom'
@@ -16,10 +17,12 @@ function App() {
     
     <div className="App">
       <Header/>
+       
       <Switch>
-     {/* <AmplifySignOut/> */}
+     
      <Route exact path="/">
-       <Home/>
+     <Aunthentication/>
+    
      </Route>
      <Route exact path="/ofertas">
        <Platos ofertas/>
