@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-image: url('https://foodaplication4d68e0d5d42b4ddbb80c6b542241e9f313746-staging.s3.amazonaws.com/public/Elchinchorro.png');
+  background-color: black;
+  /* background-image: url('https://foodaplication4d68e0d5d42b4ddbb80c6b542241e9f313746-staging.s3.amazonaws.com/public/Elchinchorro.png'); */
 }
 .ofertas{
   /* border-top: 1px solid white; */
@@ -64,7 +65,7 @@
  }
  .name{
   margin: 0;
-   display:none;
+   /* display:none; */
    /* text-transform: capitalize; */
  }
  .propaganda{
@@ -72,20 +73,32 @@
  }
 .container{
   width: 100%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
   justify-content: space-around;
   padding: 10px;
   flex-wrap: wrap;
+  border-bottom: 1px solid white;
 
 }
 .categoria{
   color: rgb(234, 162, 29);
-  /* border: 1px solid white; */
+  
   padding:10px;
   margin: 5px;
   width: 120px;
   text-transform: uppercase;
+}
+.horario{
+  color: rgb(234, 162, 29);
+  font-size: 40px;
+}
+.container1{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  flex-direction:column;
+  color: rgb(234, 162, 29);
 }
 
 
@@ -114,7 +127,7 @@
      border-radius: 5px 30px;
   }
   .logo{
-   border:1px solid rgb(234, 162, 29);
+   /* border:1px solid rgb(234, 162, 29); */
    padding: 10px;
    width:100px;
 
@@ -123,13 +136,18 @@
     width:100px;
   }.header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between;
   flex-direction: row;
-  align-items: center;
-  padding:100px;
+  align-items: center; */
+  /* padding:100px; */
+
   }.name{
     width:50%;
-    font-size:80px ;
+    font-size:120px ;
+    color: rgb(234, 162, 29);
   
   }.navigation{
     display: flex;
@@ -150,7 +168,7 @@
     align-items: center;
     color: rgb(234, 162, 29);
     margin: 10px;
-    padding: 110px;
+    /* padding: 110px; */
     font-size:30px;
   }.propaganda{
     border-top: 1px solid;
@@ -167,6 +185,9 @@
     align-items: center;
     font-size: x-large;
 
+  }.horario{
+    color: rgb(234, 162, 29);
+    font-size: 50px;
   }
 }
 @media (min-width:1024px) {
