@@ -1,0 +1,24 @@
+type Order @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  date: AWSDate
+  total: Float
+  username: String
+  ofertas: [OfertaOrder] @connection(keyName: "byOrder", fields: ["id"])
+}
+
+type Oferta @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  description: String
+  image: AWSURL
+  price: Float
+  Orders: [OfertaOrder] @connection(keyName: "byOferta", fields: ["id"])
+}
+
+type OfertaOrder @model(queries: null) @key(name: "byOferta", fields: ["ofertaID", "orderID"]) @key(name: "byOrder", fields: ["orderID", "ofertaID"]) @auth(rules: [{allow: public}, {allow: public}]) {
+  id: ID!
+  ofertaID: ID!
+  orderID: ID!
+  oferta: Oferta! @connection(fields: ["ofertaID"])
+  order: Order! @connection(fields: ["orderID"])
+}

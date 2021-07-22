@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React ,{useState,useEffect} from 'react'
+import Amplify from 'aws-amplify'
+import confi from './aws-exports'
+import { DataStore } from '@aws-amplify/datastore';
+import {withAuthenticator,AmplifySignOut} from '@aws-amplify/ui-react'
+import { Oferta } from './models';
 import './App.css';
 
+Amplify.configure(confi)
 function App() {
+ const [plates,setPlates] = useState([])
+ useEffect(async()=>{
+   const response = await DataStore.query(Oferta)
+   console.log(response)
+   setPlates(response)
+ },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <AmplifySignOut/>
+     {plates.map((plate,i)=>{
+       return (
+         <div key={i}>
+           <h1>{plate.name}</h1>
+           <img src={plate.image} alt={plate.name}/>
+           <p>{plate.description}</p>
+            <span>{plate.price}</span>
+         </div>
+       )
+     })}
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
