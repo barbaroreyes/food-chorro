@@ -13,7 +13,7 @@ const Home = () => {
     <div className='categoria'><h3><Link to='/ofertas'>Menu Regular</Link></h3>
     <img src='https://foodaplication4d68e0d5d42b4ddbb80c6b542241e9f313746-staging.s3.amazonaws.com/public/carne-frita+con+arrozy+tostones.jpeg'/>
     </div>
-     <div className='categoria'><h3>Especiales</h3>
+     <div className='categoria'><h3><Link to='/especiales'>Especiales</Link></h3>
      <img src='https://foodaplication4d68e0d5d42b4ddbb80c6b542241e9f313746-staging.s3.amazonaws.com/public/carne-frita+con+arrozy+tostones.jpeg'/>
      </div>
      <div className='categoria'><h3>Todos <span className='numero'>5</span> Estrellas </h3>

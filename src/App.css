@@ -194,6 +194,8 @@
     border:1px solid white;
     width: 25%;
     color:rgb(234, 162, 29);
+  }.especiales{
+    background-image: url('https://images.unsplash.com/photo-1575861158310-c7c6bec1c4cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80');
   }
 }
 @media (min-width:1024px) {
