@@ -31,9 +31,22 @@ const Home = () => {
         <h1 className='horario'>(915)888 647520</h1>
     </div>
     <div className='container'>
-        <h1 className='anuncios'>1773 Pali Dr El Paso Tx</h1>
-        <h1 className='anuncios'>(915)888 647520</h1>
-        <h1 className='anuncios'>(915)888 647520</h1>
+        <div className='anuncios'>
+       <h1>Banquete Texano</h1> 
+          <img  className='soon'src='https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29taW5nJTIwc29vbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' alt="picture"/>
+          
+          </div>
+          <div className='anuncios'>
+             <h1>After Party</h1> 
+          <img  className='soon'src='https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29taW5nJTIwc29vbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' alt="picture"/>
+          
+          </div>
+          <div className='anuncios'>
+       <h1>Bodas y Bautisos</h1>
+          <img  className='soon'src='https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29taW5nJTIwc29vbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' alt="picture"/>
+          
+          </div>
+     
     </div>
 
      
