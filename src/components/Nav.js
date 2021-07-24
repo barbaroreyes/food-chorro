@@ -6,7 +6,7 @@ const Nav = () => {
       <Link to='/'>Home</Link>
       <Link to='/ofertas'>Ofertas</Link>
       <Link to='/especiales'>Especiales</Link>
-      <Link to='/bevidas'>Bevidas</Link>
+      <Link to='/bevidas'>Bebidas</Link>
     </nav>
   )
 }
