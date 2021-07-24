@@ -10,6 +10,7 @@ const Speciales = (props) => {
     },[])
   return (
     <div className='ofertas bg-black '>
+      <h1 className='container1'>Todos X $9.99</h1>
       {plates.map((plate,i)=>{
        return (
          <div key={i} className='plato especiales grow db shadow-5'>
