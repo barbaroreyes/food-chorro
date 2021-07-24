@@ -1,4 +1,5 @@
 import React , {useState,useEffect} from'react';
+import {Link} from 'react-router-dom'
 import { DataStore } from '@aws-amplify/datastore';
 import { Oferta } from '../models'
 const Ofertas = (props) => {
@@ -12,12 +13,12 @@ const Ofertas = (props) => {
     <div className='ofertas bg-black '>
       {plates.map((plate,i)=>{
        return (
-         <div key={i} className='plato grow db shadow-5'>
+         <Link key={i} className='plato grow db shadow-5' to='/cart'>
            <h1>{plate.name}</h1>
            <img className='image' src={plate.image} alt={plate.name}/>
            <p>{plate.description}</p>
             <span>${plate.price}.00</span>
-        </div>
+        </Link>
        )
      })}
     </div>

@@ -8,6 +8,7 @@ import  Aunthentication from './components/Authentication'
 import Home from './pages/Home'
 import Platos from './pages/Ofertas'
 import Especiales from './pages/Speciales'
+import Cart from './components/Cart'
 import {Switch,Route} from 'react-router-dom'
 import './App.css';
 
@@ -29,6 +30,9 @@ function App() {
      </Route>
      <Route exact path="/especiales">
        <Especiales/>
+     </Route>
+     <Route exact path="/cart">
+       <Cart/>
      </Route>
      </Switch>
     </div>

@@ -15,9 +15,8 @@ const Speciales = (props) => {
          <div key={i} className='plato especiales grow db shadow-5'>
              <h1>{plate.Dia}</h1>
            <h1>{plate.name}</h1>
-           {/* <img className='image' src={plate.image} alt={plate.name}/> */}
            <h1>{plate.Description}</h1>
-            <span>${plate.price}.00</span>
+            
         </div>
        )
      })}
